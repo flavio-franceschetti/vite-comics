@@ -2,6 +2,7 @@
 import HeaderApp from "./components/HeaderApp.vue";
 import AppMainContent from "./components/AppMainContent.vue";
 import AppIconSection from "./components/AppIconSection.vue";
+import AppFirtstFooter from "./components/AppFirtstFooter.vue";
 
 export default {
   name: "App",
@@ -9,6 +10,7 @@ export default {
     HeaderApp,
     AppMainContent,
     AppIconSection,
+    AppFirtstFooter,
   },
 };
 </script>
@@ -29,7 +31,9 @@ export default {
   <!-- footer -->
   <footer>
     <!-- firstfooter -->
-    <div class="first-footer"></div>
+    <div class="first-footer">
+      <AppFirtstFooter />
+    </div>
     <!-- second footer -->
     <div class="second-footer"></div>
   </footer>

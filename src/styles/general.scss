@@ -1,3 +1,6 @@
+@use "/src/styles/partial/variables" as *;
+@use "/src/styles/partial/mixins" as *;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,10 +20,21 @@ a {
   text-decoration: none;
 }
 
+// General section backgrounds
+
 .content-section {
   background-color: rgb(28, 28, 28);
 }
 
 .icon-section {
-  background-color: #0382f9;
+  background-color: $primary-blue-color;
+}
+
+.first-footer {
+  background-image: url(/public/img/dc-logo-bg.png),
+    url(/public/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position-x: 80%;
+  background-position-y: center;
 }
