@@ -57,8 +57,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  background-color: #fff;
   padding: 20px 0;
+  @include container90;
 }
 
 .nav-bar {
