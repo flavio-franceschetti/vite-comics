@@ -1,12 +1,14 @@
 <script>
 import HeaderApp from "./components/HeaderApp.vue";
 import AppMainContent from "./components/AppMainContent.vue";
+import AppIconSection from "./components/AppIconSection.vue";
 
 export default {
   name: "App",
   components: {
     HeaderApp,
     AppMainContent,
+    AppIconSection,
   },
 };
 </script>
@@ -21,7 +23,9 @@ export default {
     <AppMainContent />
   </main>
   <!-- icons section -->
-  <div class="icon-section"></div>
+  <div class="icon-section">
+    <AppIconSection />
+  </div>
   <!-- footer -->
   <footer>
     <!-- firstfooter -->
@@ -33,8 +37,4 @@ export default {
 
 <style lang="scss">
 @use "./styles/general.scss";
-
-.content-section {
-  background-color: rgb(28, 28, 28);
-}
 </style>
