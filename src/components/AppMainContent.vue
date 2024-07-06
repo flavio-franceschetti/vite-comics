@@ -17,6 +17,6 @@ export default {
 .container {
   @include container90;
   color: #fff;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 </style>

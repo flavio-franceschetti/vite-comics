@@ -3,6 +3,7 @@ import HeaderApp from "./components/HeaderApp.vue";
 import AppMainContent from "./components/AppMainContent.vue";
 import AppIconSection from "./components/AppIconSection.vue";
 import AppFirtstFooter from "./components/AppFirtstFooter.vue";
+import AppSecondFooter from "./components/AppSecondFooter.vue";
 
 export default {
   name: "App",
@@ -11,6 +12,7 @@ export default {
     AppMainContent,
     AppIconSection,
     AppFirtstFooter,
+    AppSecondFooter,
   },
 };
 </script>
@@ -35,7 +37,9 @@ export default {
       <AppFirtstFooter />
     </div>
     <!-- second footer -->
-    <div class="second-footer"></div>
+    <div class="second-footer">
+      <AppSecondFooter />
+    </div>
   </footer>
 </template>
 
