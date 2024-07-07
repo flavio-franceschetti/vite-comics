@@ -17,7 +17,7 @@ export default {
           <a href="#">Characters</a>
         </li>
         <li>
-          <a href="#">Comics</a>
+          <a class="active" href="#">Comics</a>
         </li>
         <li>
           <a href="#">Movies</a>
@@ -57,20 +57,30 @@ export default {
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  padding: 20px 0;
+  // padding: 20px 0;
   @include container90;
 }
 
 .nav-bar {
+  height: 100%;
+
   ul {
     list-style: none;
     display: flex;
+    height: 100%;
     gap: 15px;
   }
 
   li a {
+    display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
+    align-content: center;
+    height: 100%;
   }
+}
+
+.active {
+  @include activeNavElement;
 }
 </style>
