@@ -53,7 +53,7 @@ export default {
   padding: 50px 30px;
   display: flex;
   justify-content: space-between;
-  gap: 10;
+  gap: 10px;
 }
 
 .icon-element {
