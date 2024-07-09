@@ -97,6 +97,9 @@ export default {
 </script>
 
 <template>
+  <div class="hero-section">
+    <div class="current-series">CURRENT SERIES</div>
+  </div>
   <div class="container">
     <div class="cards">
       <AppComicsCards
@@ -105,12 +108,33 @@ export default {
         :details="product"
       />
     </div>
+    <div class="load-more-btn">
+      <a href="#">LOAD MORE</a>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use "/src/styles/partial/mixins" as *;
 @use "/src/styles/partial/variables" as *;
+
+.hero-section {
+  background-image: url(/public/img/jumbotron.jpg);
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+}
+
+.current-series {
+  padding: 10px 20px;
+  background-color: $primary-blue-color;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  position: absolute;
+  bottom: -20px;
+  left: 125px;
+}
 
 .container {
   @include container90;
@@ -120,5 +144,19 @@ export default {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.load-more-btn {
+  text-align: center;
+  margin-top: 80px;
+  a {
+    background-color: $primary-blue-color;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+  }
 }
 </style>
